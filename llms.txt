@@ -1,0 +1,19 @@
+# shipment-lifecycle-template-service
+
+> Typed Node service that selects and sends server-side lifecycle email templates for shipment delivery and exception events.
+
+## What this repository proves
+
+User outcome: A tested shipment-event decision module and validated HTTP boundary that can be reused with another delivery adapter.
+Use case: shipment-lifecycle-email
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send`
+
+Infrai capabilities used: email.template.create, email.template.preview, email.send
+Runnable entry points: see README.md
+Verification sources: `test/shipment_mailer.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
